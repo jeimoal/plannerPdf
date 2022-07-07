@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Impact");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+	--bgPage: linear-gradient(rgba(0,0,0,0.5), rgba(1,1,1,0.5));
+	--bgColor: tomato;
+	--btnTxtColor: white;
+	--bgHov: royalblue;
+	--btnHovTxtColor: white;
+}
+
+@media (max-width: 414px){
+
+* {margin: 0; padding: 0};
+
+body {
+	margin: 0 auto;
+	max-width: 414px;
+}
+
+/*standard page layout start*/
+
+.wrapper {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--bgPage);
+	background: url("reuniao_02.jpg");
+}
+
+.container-mid {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	background-color: white;
+}
+
+.trigger-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bgColor);
+}
+
+.container-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--bgPage);
+	background-image: url("reuniao_01.jpg");
+}
+
+/*standard page layout end*/
+
+/*general layout styles start*/
+
+.container-top, .container-bottom {
+	background-size: cover;
+}
+
+input[type="button"] {
+	font-family: 'Impact', abadi;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	height: 30px;
+	border-radius: 1rem;
+	border-style: none;
+}
+
+/*general layout styles end*/
+
+/*container-top style*/
+
+#header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2rem 0;
+	max-width: 95%;
+	background: var(--bgPage);
+	border-style: none none inset inset;
+	border-radius: 0.5rem;
+}
+
+#pdfForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.planning {
+	font-family: 'Impact', abadi;
+	font-size: 2rem;
+	color: var(--bgColor);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.promoTxtHeader {
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 0.3rem auto 0;
+	color: white;
+}
+
+.inputFormSize {
+	width: 290px;
+	height: 30px;
+	margin: 8px auto;
+	padding: 0 10px;
+	border-radius: 1rem;
+	border-style: none;
+}
+
+.inputFormSize:focus {
+	outline: 2px solid tomato;
+}
+
+.btnFormSize {
+	color: white;
+	background-color: tomato;
+	width: 250px;
+}
+
+.btnFormSize:hover, .btnFormSize:focus {
+	background-color: royalblue;
+	color: white;
+	outline: none;
+}
+
+#pdfForm input[type="button"] {
+	margin: 1rem auto;
+}
+
+/*container-mid style*/
+
+main {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Roboto', abadi;
+	font-size: 1.2rem;
+	margin: 1rem auto;
+	max-width: 85%;
+	text-align: center;
+}
+
+.mainTopics {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto 1rem;
+}
+
+.topics {
+	margin: 1rem;
+}
+
+.topicName {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 0.2rem;
+}
+
+.topicName > span {
+	font-size: 1.5rem;
+	color: var(--bgColor);
+	text-transform: capitalize;
+	margin-left: 0.3rem;
+}
+
+.topicName > img {
+	width: 25px;
+	heigth: 25px;
+}
+
+.topicText {
+	font-size: 1rem;
+}
+
+/*trigger-container style*/
+
+.trigger {
+	font-family: Abadi;
+	font-size: 1.8rem;
+	text-align: center;
+	color: white;
+	margin: 0.5rem auto;
+}
+
+#btnTrigger {
+	color: tomato;
+	background-color: white;
+	width: 250px;
+	margin: 0.5rem auto 1rem;
+}
+
+#btnTrigger:hover, #btnTrigger:focus {
+	background-color: royalblue;
+	color: white;
+	outline: none;
+}
+
+/*container-bottom style*/
+
+.userMsgBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-width: 80%;
+	margin: 2rem auto;
+	padding: 1rem;
+	color: black;
+	background: var(--bgPage);
+	border-style: none none inset inset;
+	border-radius: 0.5rem;
+}
+
+.userMsgBox > p {
+	font-size: 1.1rem;
+	font-style: italic;
+	color: var(--btnTxtColor);
+}
+
+.userName {
+	font-family: 'Impact', abadi;
+	color: var(--btnTxtColor);
+}
+
+.userLine {
+	width: 100px;
+	border: 1px solid;
+	margin: 1rem;
+	color: var(--btnTxtColor);
+}
+
+/*Media end*/
+}

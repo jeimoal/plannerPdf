@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Impact");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@media (min-width: 415px) {
+	* {margin: 0; padding: 0};
+
+	body {
+		margin: 0 auto;
+		width: 1280px;
+		background: #fff5e6;
+	}
+
+	/*standard page layout start*/
+
+	.wrapper {
+		box-sizing: border-box;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.container-top, .container-mid, .trigger-container, .container-bottom {
+		grid-column: 1/4;
+		justify-content: center;
+	}
+
+	.container-top, .container-bottom {
+		height: 426px;
+	}
+
+	.container-mid {
+		height: 276px;
+	}
+
+	.trigger-container {
+		height: 100px;
+	}
+
+	.container-top {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-image: url("reuniao_02.jpg");
+		background-color: linear-gradient(rgba(0,0,0,0.3), rgba(1,1,1,0.3)); /*used if img dont load*/
+	}
+
+	.container-mid {
+		display: flex;		
+		background-color: white;
+	}
+
+	.trigger-container {
+		display: flex;
+		align-items: center;
+		background-color: tomato;
+	}
+
+	.container-bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-image: url("reuniao_01.jpg");
+		background-color: linear-gradient(rgba(0,0,0,0,3), rgba(1,1,1,0.3)); /*used if img dont load*/
+	}
+
+	/*standard page layout end*/
+
+	/*general layout styles start*/
+
+	.container-top, .container-bottom {
+		background-size: cover;
+	}
+
+	input[type="button"] {
+		font-family: 'Impact', abadi;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		height: 30px;
+		border-radius: 1rem;
+		border-style: none;
+	}
+
+	/*general layout styles end*/
+
+	/*container-top style*/
+
+	#header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#pdfForm {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.planning {
+		font-family: 'Impact', abadi;
+		font-size: 2rem;
+		color: tomato;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.promoTxtHeader {
+		text-align: center;
+		font-size: 1.2rem;
+		margin: 0.3rem auto 0;
+		color: black;
+	}
+
+	.inputFormSize {
+		width: 290px;
+		height: 30px;
+		margin: 8px auto;
+		padding: 0 10px;
+		border-radius: 1rem;
+		border-style: none;
+	}
+
+	.inputFormSize:focus {
+		outline: 2px solid tomato;
+	}
+
+	.btnFormSize {
+		color: white;
+		background-color: tomato;
+		width: 250px;
+		margin: 8px auto;
+	}
+
+	.btnFormSize:hover, .btnFormSize:focus {
+		background-color: royalblue;
+		color: white;
+		outline: none;
+	}
+
+	/*container-mid style*/
+
+	main {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	h1 {
+		font-family: 'Roboto', abadi;
+		margin: 0 auto 1rem;
+	}
+
+	.mainTopics {
+		display: flex;
+		margin: 0 auto 1rem;
+	}
+
+	.topics {
+		margin: 0 1rem;
+	}
+
+	.topicName {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 0.2rem;
+	}
+
+	.topicName > span {
+		font-size: 1.5rem;
+		color: tomato;
+		margin-left: 0.3rem;
+	}
+
+	.topicName > img {
+		width: 25px;
+		heigth: 25px;
+	}
+
+	.topicText {
+		font-size: 0.9rem;
+	}
+
+	/*trigger-container style*/
+
+	.trigger {
+		font-family: Abadi;
+		font-size: 1.8rem;
+		text-align: center;
+		color: white;
+		margin-right: 4rem;
+	}
+
+	#btnTrigger {
+		color: tomato;
+		background-color: white;
+		width: 250px;
+	}
+
+	#btnTrigger:hover, #btnTrigger:focus {
+		background-color: royalblue;
+		color: white;
+		outline: none;
+	}
+
+	/*container-bottom style*/
+
+	.userMsgBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 30%;
+		color: black;
+	}
+
+	.userMsgBox > p {
+		font-size: 1.2rem;
+		font-style: italic;
+	}
+
+	.userName {
+		font-family: 'Impact', abadi;
+	}
+
+	.userLine {
+		width: 100px;
+		border: 1px solid;
+		margin: 1rem;
+	}
+
+}
